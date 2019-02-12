@@ -18,9 +18,13 @@ class Note extends Component{
   }
 
   componentWillMount(){
+    var colors = ["#B1CDEA","#EBF6F2","#F9B8A2", "#F8CED7", "#E8DFE4", "#F9AC55", "yellow", "#74CAC4" ]
+    var bgColor = colors[Math.floor(Math.random() * colors.length)]
+    console.log(bgColor)
     this.style = {
       right: this.randomBetween(0, window.innerWidth - 150, 'px'),
       top: this.randomBetween(0, window.innerHeight - 150, 'px'),
+      backgroundColor: bgColor,
       transform: `rotate(${this.randomBetween(-25, 25, 'deg')})`
     }
   }

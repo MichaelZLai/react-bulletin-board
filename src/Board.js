@@ -77,7 +77,7 @@ class Board extends Component {
         {this.state.notes.map(this.eachNote)}
         <button onClick={() => this.add("New Note")}
                 id="add">
-            <FaPlus />
+            <FaPlus /> Add Note
         </button>
       </div>
     )
